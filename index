@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag Bookmark Helper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      cursor: grab;
+      margin: 20px 0;
+    }
+    #instructions {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Drag to Bookmark Bar</h1>
+  <p>Drag the image below to your bookmarks bar, then click it to simplify the "Copy as cURL (bash)" process.</p>
+  <a href="javascript:(function() { alert('To use this, open Developer Tools, go to the Network tab, right-click on a request, and select \"Copy as cURL\" or \"Copy all as cURL\".'); })();">
+    <img src="https://via.placeholder.com/150x50.png?text=Drag+Me" alt="Drag to Bookmark Bar">
+  </a>
+  <div id="instructions">
+    <h3>How to Use:</h3>
+    <ol>
+      <li>Drag the image above to your bookmarks bar.</li>
+      <li>Click the bookmarklet after navigating to the page you want to inspect.</li>
+      <li>Follow the on-screen instructions to complete the process manually.</li>
+    </ol>
+  </div>
+</body>
+</html>
