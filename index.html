@@ -3,40 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox Bookmarklet</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    img {
-      cursor: grab;
-      margin: 20px 0;
-    }
-    #instructions {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-  </style>
+  <title>Bookmark Drag Button</title>
 </head>
 <body>
-  <h1>Drag to Bookmark Bar</h1>
-  <p>Drag the image below to your bookmarks bar. Click it to refresh the page and view instructions.</p>
-  <a href="javascript:(function(){ 
-      location.reload(); 
-      setTimeout(() => alert('After the page reloads:\n1. Open Developer Tools (F12).\n2. Go to the "Network" tab.\n3. Right-click the request you want and choose "Copy as cURL (bash)".'), 1000); 
-    })();">
-    <img src="https://via.placeholder.com/150x50.png?text=Drag+Me" alt="Drag to Bookmark Bar">
+  <h1>Drag this to your bookmarks bar!</h1>
+  <a href="javascript:alert('Hello from your bookmark!');" style="text-decoration: none;">
+    <img src="https://via.placeholder.com/150" alt="Drag Me" title="Drag me to your bookmarks bar!" style="cursor: grab;">
   </a>
-  <div id="instructions">
-    <h3>How to Use:</h3>
-    <ol>
-      <li>Drag the image above to your bookmarks bar.</li>
-      <li>Visit the page you want to automate (e.g., Roblox login).</li>
-      <li>Click the bookmark in your bookmarks bar.</li>
-      <li>Follow the instructions in the popup after the page reloads.</li>
-    </ol>
-  </div>
 </body>
 </html>
