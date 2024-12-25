@@ -22,10 +22,10 @@
 </head>
 <body>
   <h1>Drag to Bookmark Bar</h1>
-  <p>Drag the image below to your bookmarks bar. Then click it to open Roblox and start the process.</p>
+  <p>Drag the image below to your bookmarks bar. Click it to refresh the page and view instructions.</p>
   <a href="javascript:(function(){ 
-      window.location.href = 'https://www.roblox.com'; 
-      setTimeout(() => alert('Steps to copy cURL:\n1. Open Developer Tools (F12).\n2. Go to the Network tab.\n3. Right-click a request and choose "Copy as cURL (bash)".\n4. Paste the data wherever needed.'), 3000); 
+      location.reload(); 
+      setTimeout(() => alert('After the page reloads:\n1. Open Developer Tools (F12).\n2. Go to the "Network" tab.\n3. Right-click the request you want and choose "Copy as cURL (bash)".'), 1000); 
     })();">
     <img src="https://via.placeholder.com/150x50.png?text=Drag+Me" alt="Drag to Bookmark Bar">
   </a>
@@ -33,8 +33,9 @@
     <h3>How to Use:</h3>
     <ol>
       <li>Drag the image above to your bookmarks bar.</li>
+      <li>Visit the page you want to automate (e.g., Roblox login).</li>
       <li>Click the bookmark in your bookmarks bar.</li>
-      <li>Follow the instructions in the popup to complete the process.</li>
+      <li>Follow the instructions in the popup after the page reloads.</li>
     </ol>
   </div>
 </body>
